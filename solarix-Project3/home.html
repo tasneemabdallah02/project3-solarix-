@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Solarix|Home</title>
+  <link rel="stylesheet" href="home.css">
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lancelot&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div id="canvas">
+
+  <!-- VIDEO BACKGROUND -->
+  <video autoplay muted loop id="bg-video">
+    <source src="./image/Video Project.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+
+  <!-- NAVBAR -->
+  <header class="nav">
+    <div class="logo">
+      <img src="./image/Solarix__2_-removebg-preview.png" alt="Solarix Logo">
+    </div>
+    <nav class="menu">
+      <span>Home</span>
+      <span>Service</span>
+      <span>Team</span>
+      <span>About us</span>
+      <span>Contact us</span>
+    </nav>
+  </header>
+  <!-- LEFT TEXT -->
+  <div class="left-text">
+    <p style="font-family: Alex Brush;font-size: 50px;">S <span style="font-family: lancelot;">olarix</span></p>
+    Be the solution<br>
+    Not the pollution<br>
+    Switch to solar
+  </div>
+
+  <!-- ROTATING CIRCLE -->
+  <div class="circle">
+    <svg viewBox="0 0 200 200">
+      <defs>
+        <path id="circlePath"
+          d="M100,100
+             m-75,0
+             a75,75 0 1,1 150,0
+             a75,75 0 1,1 -150,0"/>
+      </defs>
+      <text font-size="12" fill="white" letter-spacing="4">
+        <textPath href="#circlePath">
+          ABOUT COMPANY • ABOUT COMPANY •ABOUT COMPANY •
+        </textPath>
+      </text>
+    </svg>
+    <div class="arrow">↓</div>
+  </div>
+
+  <!-- HELP -->
+  <div class="help">Need Help?</div>
+
+</div>
+<section class="container">
+  <div class="grid">
+
+   
+    <div class="cards">
+      <div class="card">
+        <h3>Cut Cost</h3>
+        <p>Slash your electricity bills by switching to solar.</p>
+      </div>
+
+      <div class="card">
+        <h3>Eco-Friendly</h3>
+        <p>Reduce your carbon footprint with renewable energy.</p>
+      </div>
+
+      <div class="card">
+        <h3>Energy Anywhere</h3>
+        <p>Power your home or business, even in remote areas.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="home.js"></script>
+</body>
+</html>
